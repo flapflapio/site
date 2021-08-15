@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  nginx:
+    container_name: flapflap-site-dev
+    image: nginx
+    ports:
+      - 80:80
+    networks:
+      - main
+    healthcheck:
+      test: ["CMD", "service", "nginx", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - type: bind
+        source: ./public
+        target: /usr/share/nginx/html
+
+networks:
+  main:
+    name: scratch_network
