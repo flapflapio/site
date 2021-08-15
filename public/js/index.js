@@ -1,5 +1,5 @@
 (() => {
-  if (document.INDEX_JS_LOADED) return;
+  if (document.INDEX_JS_LOADED) return;  // IFNDEF
 
   /**
    * Active caption animation
@@ -27,5 +27,6 @@
   };
 
   animateCaption();
-  document.INDEX_JS_LOADED = true;
+
+  document.INDEX_JS_LOADED = true; //
 })();
