@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.7"
 services:
   nginx:
     container_name: flapflap-site-dev
@@ -19,4 +19,4 @@ services:
 
 networks:
   main:
-    name: scratch_network
+    name: flap-flap_network
