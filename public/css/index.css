@@ -1,43 +1,5 @@
-a:link {
-  color:#ffcc4d ;
-}
-a:hover{
-  color: white;
-}
-a:visited{
-  color: beige;
-}
 body {
-  color: white;
-  background-color: #662113;
   font-family: "Roboto", sans-serif;
-}
-
-header {
-  top: 0;
-  width: 100vw;
-  height: 5em;
-}
-
-main {
-  width: 90vw;
-  height: 90vh;
-  margin: auto;
-  animation: float 3s ease-in-out infinite;
-  z-index: 10;
-}
-
-footer.box {
-  height: 5em;
-  bottom: 0;
-  justify-content: end;
-}
-
-header,
-footer {
-  position: fixed;
-  width: 100vw;
-  left: 0;
 }
 
 .unselectable {
@@ -48,34 +10,9 @@ footer {
   user-select: none; /* Standard */
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  place-content: center;
-}
-
-.logo {
-  font-size: 20rem;
-}
-
 .sora {
   font-family: "Sora", sans-serif;
   font-style: italic;
-}
-
-.name {
-  font-size: 3rem;
-  color: #ffcc4d;
-}
-
-.sectionHeader{
-  font-size: 1.25rem;
-}
-
-.caption {
-  font-size: 1.75rem;
-  width: 8em;
 }
 
 footer > .sora {
@@ -95,4 +32,12 @@ footer > .sora {
   100% {
     translate: 0;
   }
+}
+
+.floater {
+  animation: float 3s ease-in-out infinite;
+}
+
+main > h2 {
+  font-size: 2em;
 }

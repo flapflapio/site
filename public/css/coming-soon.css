@@ -1,0 +1,102 @@
+a:link {
+  color:#ffcc4d ;
+}
+a:hover{
+  color: white;
+}
+a:visited{
+  color: beige;
+}
+
+body {
+  color: white;
+  background-color: #662113;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  top: 0;
+  width: 100vw;
+  height: 5em;
+}
+
+main {
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+  z-index: 10;
+}
+
+.floater {
+  animation: float 3s ease-in-out infinite;
+}
+
+footer.box {
+  height: 5em;
+  bottom: 0;
+  justify-content: end;
+}
+
+header,
+footer {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+}
+
+.unselectable {
+  /* Make this section unselectable */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+}
+
+.logo {
+  font-size: 20rem;
+}
+
+.sora {
+  font-family: "Sora", sans-serif;
+  font-style: italic;
+}
+
+.name {
+  font-size: 3rem;
+  color: #ffcc4d;
+}
+
+.sectionHeader{
+  font-size: 1.25rem;
+}
+
+.caption {
+  font-size: 1.75rem;
+  width: 8em;
+}
+
+footer > .sora {
+  font-size: 1.1rem;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+@keyframes float {
+  0% {
+    translate: 0;
+  }
+  50% {
+    translate: 0 0.5rem;
+  }
+  100% {
+    translate: 0;
+  }
+}
