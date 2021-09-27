@@ -1,3 +1,12 @@
+a:link {
+  color:#ffcc4d ;
+}
+a:hover{
+  color: white;
+}
+a:visited{
+  color: beige;
+}
 body {
   color: white;
   background-color: #662113;
@@ -7,7 +16,7 @@ body {
 header {
   top: 0;
   width: 100vw;
-  height: 3em;
+  height: 5em;
 }
 
 main {
@@ -58,6 +67,10 @@ footer {
 .name {
   font-size: 3rem;
   color: #ffcc4d;
+}
+
+.sectionHeader{
+  font-size: 1.25rem;
 }
 
 .caption {
