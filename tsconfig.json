@@ -2,10 +2,11 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "sourceMap": true,
-    "module": "es6",
+    "module": "ES2020",
     "target": "es5",
     "jsx": "react",
     "allowJs": true,
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "esModuleInterop": true
   }
 }

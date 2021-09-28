@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode production -w",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "docker": "docker-compose up -d",
+    "docker-stop": "docker-compose down"
   },
   "repository": {
     "type": "git",
@@ -13,12 +15,18 @@
   },
   "keywords": [],
   "author": "",
+  "license": "MIT",
   "homepage": "https://github.com/flapflapio/site#readme",
-  "dependencies": {},
+  "dependencies": {
+    "highlight.js": "^11.2.0",
+    "markdown-it": "^12.2.0"
+  },
   "devDependencies": {
+    "@types/markdown-it": "^12.2.1",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
     "eslint": "^7.32.0",
+    "showdown": "^1.9.1",
     "ts-loader": "^9.2.6",
     "typescript": "^4.4.3",
     "webpack": "^5.54.0",

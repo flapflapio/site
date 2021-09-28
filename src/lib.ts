@@ -1,6 +1,10 @@
 /**
- * When you publish a new sprint, add it to the below array (e.g. Sprint 2, add
- * 2 to the array)
+ * !!!
+ *
+ * When you publish a new sprint, add it to the below array (e.g. Sprint 2,
+ * add 2 to the array)
+ *
+ * !!!
  */
 const sprintsCompleted = [1];
 
@@ -54,7 +58,11 @@ const readResponseBody = async (resp: Promise<Response>): Promise<string> => {
  */
 const markdownToDiv = (md: string): HTMLDivElement => {
   const d = document.createElement("div");
-  d.textContent = md;
+
+  import("./markdown").then(({ Markdown }) => {
+    d.innerHTML = Markdown.render(md);
+  });
+
   return d;
 };
 
