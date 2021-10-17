@@ -86,8 +86,9 @@ const appLinks = [
 ]
 
 const mapLinks = links =>
-  links.map(({ link, image, overrideText }) => (
+  links.map(({ link, image, overrideText }, i) => (
     <div
+      key={`${link}-${i}`}
       style={{
         display: "grid",
         gridTemplateColumns: "1fr 9fr",
