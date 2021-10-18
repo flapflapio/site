@@ -5,6 +5,12 @@
 </p>
 <h1 align="center">
   Machinist Dev Blog
+  <!-- CI/CD builds -->
+  <div align="center">
+    <a href="https://github.com/flapflapio/site/actions/workflows/test.yml" target="_blank">
+      <img src="https://github.com/flapflapio/site/actions/workflows/test.yml/badge.svg" alt="Build and Test">
+    </a>
+  </div>
 </h1>
 
 Blog website for project Machinist.
