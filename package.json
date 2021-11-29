@@ -9,6 +9,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
+    "test": "echo 'TODO: add some tests'",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "up": "docker-compose up -d",
